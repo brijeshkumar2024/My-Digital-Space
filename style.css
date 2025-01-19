@@ -1,0 +1,193 @@
+/* Global Reset */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #2c3e50, #4ca1af);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #333;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Header */
+.header {
+    background-color: #1D3C6D;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Header Subtitle */
+.header-subtitle {
+    
+    font-size: 1.2rem; /* Slightly larger for emphasis */
+    opacity: 0.85;
+    margin-left: 120px; /* Adjust the margin to align */
+    margin-top: 15px; /* Add extra space above */
+    font-style: italic; /* Add a sophisticated style */
+    color: #f0e68c; /* Warm, inviting color */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Add subtle shadow for depth */
+    font-weight: 600; /* Slightly bold for better readability */
+    animation: fade-in 2s ease-out; 
+    display: center;
+}
+
+/* Add an attractive quote */
+.header-subtitle::after {
+    content: '"Transforming Ideas into Impact."'; /* Your inspiring quote */
+    display: block; /* Ensures the quote appears on a new line */
+    font-size: 1rem; /* Smaller font size for the quote */
+    font-style: normal; /* Regular style for differentiation */
+    color: #00ffd9; /* Highlight with bright yellow */
+    margin-top: 10px; /* Space above the quote */
+    text-align: center; /* Align with the subtitle */
+}
+
+
+.profile-photo {
+    width: 100px; /* Default width for mobile */
+    height: 100px; /* Default height for mobile */
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover;
+    margin-bottom: 15px; /* Adds space below the photo */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    .profile-photo {
+        width: 150px; /* Adjust the width for larger screens */
+        height: 150px; /* Adjust the height for larger screens */
+    }
+}
+
+.header-title {
+    font-size: 1.9em;
+    margin-left: 90px; /* Add margin to prevent overlap */
+}
+
+.header-subtitle {
+    font-size: 1rem;
+    margin-left: 7px; /* Add margin to prevent overlap */
+}
+
+.footer p {
+    font-size: 0.8rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    background-color: #34495e;
+    padding: 20px;
+    color: #ecf0f1;
+}
+
+.footer a {
+    color: #0A66C2;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Quick Links */
+ul {
+    list-style: none;
+    padding: 0;
+    animation: fade-in 1.5s ease-out;
+}
+
+li {
+    margin: 15px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffeb3b;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+    color: #f44336;
+    transform: scale(1.1);
+}
+
+.quick-links-box {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin: 0 auto 20px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Animations */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Reset icon color to its original value */
+.linkedin-icon {
+    color: #2d89e4; /* LinkedIn blue */
+}
+
+.portfolio-icon {
+    color: #e72c2c; /* Neutral dark gray */
+}
+
+.github-icon {
+    color: #ffffff; /* GitHub black */
+}
+
+.email-icon {
+    color: #ffa199; /* Gmail red */
+}
+
+.resume-icon {
+    color: #4CAF50; /* Green for resume */
+}
+.linkedin-icon:hover, .portfolio-icon:hover, .github-icon:hover, .email-icon:hover, .resume-icon:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+.header-title, .header-subtitle, .footer p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
